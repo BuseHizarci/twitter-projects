@@ -1,29 +1,28 @@
 import React from 'react'
-import {
-    BookmarksIcon,
-    ExploreIcon,
-    HomeIcon,
-    ListsIcon,
-    MessagesIcon,
-    MoreIcon,
-    NotificationsIcon,
-    ProfileIcon, }
-    from "../icons/icon";
+import TwitterLogo from '../images/TwitterLogo.svg'
+// import {
+//     BookmarksIcon,
+//     ExploreIcon,
+//     HomeIcon,
+//     ListsIcon,
+//     MessagesIcon,
+//     MoreIcon,
+//     NotificationsIcon,
+//     ProfileIcon, }
+//     from "../icons/icon";
 
 const Sidebar = () => {
+
     return (
-    <div  className="w-72 bg-blue-200"> 
-    <h1> SideBarr </h1>
-    <HomeIcon/>
-    <ExploreIcon/>
-    <NotificationsIcon/>
-    <MessagesIcon/>
-    <BookmarksIcon/>
-    <ListsIcon/>
-    <ProfileIcon/>
-    <MoreIcon/>
+    <div  className="flex flex-col justify-between w-72 bg-blue-200 px-2"> 
+    <img src={TwitterLogo} alt="Twitter Logo" className="w-9 h-9" />
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li> Explore</li>
+        </ul>
+    </nav>
     </div>
-        
     );
 }
 
