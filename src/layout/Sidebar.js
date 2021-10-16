@@ -17,7 +17,7 @@ const Sidebar = () => {
     <div  className="flex flex-col justify-between w-72 bg-blue-200 px-2"> 
     <div>
     <img src={TwitterLogo} alt="Twitter Logo" className="w-9 h-9" />
-    <nav>
+    <nav className="mb-4">
         <ul>
             <li>Home</li>
             <li> Explore</li>
