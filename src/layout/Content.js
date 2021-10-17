@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Divider from "../components/Divider";
-// import FeedList from "../components/FeedList";
+import FeedList from "../components/FeedList";
 import TweetBox from "../components/TweetBox";
 import db from "../firebase";
-import { PopulerIcon } from "../icons/Icon";
+import { PopulerIcon } from "../icons/icon";
 
 const Content = () => {
   const [tweets, setTweets] = useState([]);
@@ -16,7 +16,7 @@ const Content = () => {
       );
   }, []);
 
-return (
+  return (
     <main className="flex-1 flex flex-col border-r border-l border-gray-extraLight">
       <header className="sticky top-0 z-10 bg-white flex justify-between items-center p-4 border-b border-gray-extraLight ">
         <span className="font-bold text-xl text-gray-900">Home</span>
@@ -31,8 +31,10 @@ return (
         <TweetBox />
       </div>
       <Divider />
+     
       <FeedList tweets={tweets} />
     </main>
   );
 };
-export default content
+
+export default Content;

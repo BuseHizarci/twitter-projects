@@ -7,7 +7,7 @@ import {
   ImageIcon,
   PollIcon,
   ScheduleIcon,
-} from "../icons/Icon";
+} from "../icons/icon";
 
 const TweetBox = () => {
   const [content, setContent] = useState("");
@@ -15,8 +15,8 @@ const TweetBox = () => {
   const sendTweet = () => {
     if (content !== "") {
       db.collection("feed").add({
-        displayName: "Didem Küçükkaraaslan",
-        username: "@DidemKkkaraasl1",
+        displayName: "Buse Hizarci",
+        username: "@busehzrc",
         content,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         image:

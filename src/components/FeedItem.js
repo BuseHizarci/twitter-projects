@@ -1,5 +1,5 @@
 import React from "react";
-import { LikeIcon, ReplyIcon, ReTweetIcon, ShareIcon } from "../icons/Icon";
+import { LikeIcon, ReplyIcon, ReTweetIcon, ShareIcon } from "../icons/icon";
 
 const FeedItem = ({
   avatar,
@@ -22,7 +22,7 @@ const FeedItem = ({
           </span>
         </div>
         <p className="mt-2 text-gray-900 text-sm">{content}</p>
-        {image && <img src={image} className="my-2 rounded-xl max-h-96" />}
+        {image && <img src={image} alt="" className="my-2 rounded-xl max-h-96" />}
         <ul className="-ml-1 mt-3 flex justify-between max-w-md">
           <li className="flex items-center  space-x-3 text-gray-dark text-sm group">
             <div className="flex items-center justify-center w-8 h-8 rounded-full group-hover:bg-primary-light ">
