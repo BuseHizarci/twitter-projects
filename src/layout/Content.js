@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Divider from "../components/Divider";
-import FeedList from "../components/FeedList";
+// import FeedList from "../components/FeedList";
 import TweetBox from "../components/TweetBox";
 import db from "../firebase";
 import { PopulerIcon } from "../icons/Icon";
