@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import SideLink from "../components/SideLink";
 import TwitterLogo from '../images/TwitterLogo.svg'
+import UserBox from "../components/UserBox";
 import {
     BookmarksIcon,
     ExploreIcon,
@@ -75,7 +76,7 @@ import {
     </nav>
     <button className="bg-primary-base hover:bg-primary-dark  text-white rounded-full py-3 px-8 w-11/12 shadow-lg  transform transition-colors duratio-200">Tweet</button>
     </div>
-    <div>Alttaraf</div>
+      <UserBox />
     </div>
     );
 }
