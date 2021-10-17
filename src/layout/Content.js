@@ -1,5 +1,20 @@
-import React , {useEffect} from 'react'
-import db from '../firebase;'
+import React, { useEffect, useState } from "react";
+import Divider from "../components/Divider";
+import FeedList from "../components/FeedList";
+import TweetBox from "../components/TweetBox";
+import db from "../firebase";
+import { PopulerIcon } from "../icons/Icon";
+
+const Content = () => {
+  const [tweets, setTweets] = useState([]);
+
+  useEffect(() => {
+    db.collection("feed")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setTweets(snapshot.docs.map((doc) => doc.data()))
+      );
+  }, []);
 
 return (
     <main className="flex-1 flex flex-col border-r border-l border-gray-extraLight">
