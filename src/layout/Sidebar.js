@@ -50,7 +50,7 @@ import {
 const Sidebar = () => {
 
     return (
-    <div  className="flex flex-col justify-between w-72 bg-blue-200 px-2"> 
+    <div  className="flex flex-col justify-between w-72 bg-white px-2"> 
     <div>
     <div className="mt-1 mb-4 ml-1 flex items-center justify-center w-12 h-12 rounded-full hover:bg-gray-light transform transition-colors duration-200">
           <img src={TwitterLogo} alt="Twitter Logo" className="w-9 h-9" />
