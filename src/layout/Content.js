@@ -9,13 +9,14 @@ const Content = () => {
   const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
-    db.collection("feed")
+    db.collection("new collection")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) =>
         setTweets(snapshot.docs.map((doc) => doc.data()))
       );
   }, []);
 
+  console.log(tweets);
   return (
     <main className="flex-1 flex flex-col border-r border-l border-gray-extraLight">
       <header className="sticky top-0 z-10 bg-white flex justify-between items-center p-4 border-b border-gray-extraLight ">
@@ -24,7 +25,7 @@ const Content = () => {
       </header>
       <div className="flex space-x-4 px-4 py-3">
         <img
-          src="https://pbs.twimg.com/profile_images/1373343596150132738/j8K08iHu_400x400.jpg"
+          src="https://pbs.twimg.com/profile_images/1266848744093474816/PEQjk0tn_400x400.jpg"
           alt="Profile"
           className="w-11 h-11 rounded-full"
         />
