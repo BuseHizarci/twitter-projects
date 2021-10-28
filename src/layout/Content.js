@@ -9,7 +9,7 @@ const Content = () => {
   const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
-    db.collection("new collection")
+    db.collection("feeds")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) =>
         setTweets(snapshot.docs.map((doc) => doc.data()))

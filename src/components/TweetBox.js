@@ -14,7 +14,7 @@ const TweetBox = () => {
 
   const sendTweet = () => {
     if (content !== "") {
-      db.collection("new collection").add({
+      db.collection("feeds").add({
         displayName: "Buse Hizarci",
         username: "@Buseehzrc",
         content,
