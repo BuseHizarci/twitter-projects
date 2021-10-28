@@ -36,6 +36,7 @@ const TweetBox = () => {
         placeholder="What's happening?"
         onChange={(e) => setContent(e.target.value)}
         value={content}
+        image="https://yt3.ggpht.com/ytc/AKedOLT2y4hkt_FsZMoIkho6Vn8jFfGacOYxi2XkvuXL=s900-c-k-c0x00ffffff-no-rj"
       />
       <div className="flex items-center justify-between">
         <div className="flex -ml-3">
