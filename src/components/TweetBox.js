@@ -20,7 +20,7 @@ const TweetBox = () => {
         content,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         image:
-          "https://i.pinimg.com/originals/33/ed/c7/33edc7b53998ffd254f6cdf4d970483f.jpg",
+          "https://pbs.twimg.com/media/EICHr9OWwAIDV-m?format=jpg&name=small",
         avatar:
           "https://pbs.twimg.com/profile_images/1266848744093474816/PEQjk0tn_400x400.jpg",
       });
